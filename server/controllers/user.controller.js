@@ -34,8 +34,8 @@ const getOverallData = (tableOverall) => {
     .trim();
   overall.averageScore.tenPointScale = averageScore[0];
   overall.averageScore.fourPointScale = averageScore[1];
-  overall.creditDebt.amount = averageScore[0];
-  overall.creditDebt.percent = averageScore[1];
+  overall.creditDebt.amount = creditDebt[0];
+  overall.creditDebt.percent = creditDebt[1];
   overall.graduationRating = tableOverall[1].children[1].children[1].textContent
     .replace(/\s+/g, ' ')
     .trim();
